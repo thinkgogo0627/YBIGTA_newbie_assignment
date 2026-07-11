@@ -102,8 +102,8 @@ def connect_with_fallback(ips: list[str], port: int, timeout: float, prefer: str
                 ip=ip,
                 port=port,
                 connect_ms=connect_ms,
-                local_addr=sock.getsockname,
-                peer_addr=sock.getpeername,
+                local_addr=sock.getsockname(),
+                peer_addr=sock.getpeername(),
                 error=None,
                 sock=sock
             )
