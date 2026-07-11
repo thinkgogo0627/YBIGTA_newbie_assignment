@@ -14,7 +14,7 @@ def build_request(host: str, path: str) -> bytes:
     # TODO: HTTP/1.1 규격에 맞게 요청 문자열(GET, Host, Connection 헤더 포함)을 완성하세요.
     # HINT: 각 줄의 끝은 \r\n이며, 헤더의 끝에는 빈 줄(\r\n)이 하나 더 필요합니다.
 
-    request_line = "GET {path} HTTP/1.1\r\n"
+    request_line = f"GET {path} HTTP/1.1\r\n"
     headers = f"Host: {host}\r\nConnection: close\r\n\r\n"
     req = request_line + headers
     
