@@ -20,7 +20,7 @@ dependencies:
   - packaging=26.0=py312h06a4308_0
   - pip=26.1.2=pyhc872135_0
   - pthread-stubs=0.3=h0ce48e5_1
-  - python=3.12.13=h4d16e0c_1
+  - python=3.12.13=hc5f7cf0_3
   - readline=8.3=hc2a1206_0
   - setuptools=82.0.1=py312h06a4308_0
   - sqlite=3.53.2=h795bf6d_0
