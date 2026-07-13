@@ -125,9 +125,34 @@ class Pair(tuple[int, int]):
 
 
 def main() -> None:
-    # 구현하세요!
-    pass
+    input = sys.stdin.readline
 
+    n = int(input())
+    arr = list(map(int, input().split()))
+
+    # 원본 값을 Pair로 변환해서 세그트리 초기화
+    data = [Pair.f_conv(w) for w in arr]
+    seg: SegmentTree[Pair, int] = SegmentTree(
+        data=data,
+        identity=Pair.default(),
+        merge=Pair.f_merge,
+    )
+
+    m = int(input())
+    results = []
+    for _ in range(m):
+        q = list(map(int, input().split()))
+        if q[0] == 1:
+            # 1 i v: i번째(1-indexed)를 v로 변경
+            i, v = q[1], q[2]
+            seg.update(i - 1, Pair.f_conv(v))   # 0-indexed로 변환
+        else:
+            # 2 l r: [l, r] 구간의 최대 두 값 합
+            l, r = q[1], q[2]
+            result = seg.query(l - 1, r - 1)    # 0-indexed
+            results.append(result.sum())
+
+    print('\n'.join(map(str, results)))
 
 if __name__ == "__main__":
     main()
