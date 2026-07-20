@@ -5,3 +5,5 @@ miniconda.sh
 .DS_Store
 .csv
 .env
+.vscode/
+*.code-workspace
