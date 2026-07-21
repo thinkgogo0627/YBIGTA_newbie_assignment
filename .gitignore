@@ -3,7 +3,6 @@ __pycache__/
 .mypy_cache/
 miniconda.sh
 .DS_Store
-.csv
 .env
 .vscode/
 *.code-workspace
