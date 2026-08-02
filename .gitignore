@@ -3,6 +3,13 @@ __pycache__/
 .mypy_cache/
 miniconda.sh
 .DS_Store
-.env
 .vscode/
 *.code-workspace
+
+
+.env
+**/.env
+
+6(1)-CV/data/cifar-100-python.tar.gz
+6(1)-CV/data/cifar-100-python/
+EOF
