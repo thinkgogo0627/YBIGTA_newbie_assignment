@@ -1,4 +1,4 @@
-====== ACCURACY: 0.7 ======
+====== ACCURACY: 0.74 ======
 
 [Details]
 Question 1: If $f(x) = \frac{3x-2}{x-2}$, what is the value of $f(-2) +f(-1)+f(0)$? Express your answer as a common fraction.
@@ -247,7 +247,7 @@ Question 31: Given $f(x) = \frac{\sqrt{x-1}}{x-2}$, what is the smallest possibl
 Subject: Algebra
 Level: 3
 Correct Answer: 1
-Predicted Answer: None
+Predicted Answer: 3
 Correct: False
 
 Question 32: Factor the expression $ab+5b+2a+10$.
@@ -268,8 +268,8 @@ Question 34: How many elements are in the intersection of the set of all the pri
 Subject: Number Theory
 Level: 2
 Correct Answer: 9
-Predicted Answer: None
-Correct: False
+Predicted Answer: 9
+Correct: True
 
 Question 35: Let $F_1$ and $F_2$ be the foci of the ellipse $kx^2 + y^2 = 1,$ where $k > 1$ is a constant. Suppose that there is a circle which passes through $F_1$ and $F_2$ and which lies tangent to the ellipse at two points on the $x$-axis. Compute $k.$
 Subject: Intermediate Algebra
@@ -384,6 +384,6 @@ Question 50: If Rosa's age is divided by 2, 3, 4, or 6, the remainder is 1. If h
 Subject: Number Theory
 Level: 2
 Correct Answer: 49
-Predicted Answer: None
-Correct: False
+Predicted Answer: 49
+Correct: True
 
